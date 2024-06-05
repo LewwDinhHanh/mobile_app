@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MobilShop</string>
+    <string-array name="role_array">
+        <item>Employee</item>
+        <item>Manager</item>
+    </string-array>
+    <string name="add_product">Added product: </string>
+</resources>

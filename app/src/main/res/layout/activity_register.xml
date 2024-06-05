@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/download"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/pink"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:shadowColor="#33000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="2" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+            <EditText
+                android:id="@+id/etEmployeeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Employee Name"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="Username"
+                android:textSize="20dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:entries="@array/role_array" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/pink"
+                android:layout_marginTop="30dp"
+                android:text="Register"
+                />
+
+            <LinearLayout
+                android:id="@+id/changeToSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dontHaveAccountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an Account ?"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txtLogin"
+                    android:textColor="@color/pink"
+                    android:text="Log in"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout >

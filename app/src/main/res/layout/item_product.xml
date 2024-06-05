@@ -1,0 +1,78 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/idIVSSImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/isDescreption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/idIVSSImage"
+            android:text="Descreption"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/idTVName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/isDescreption"
+            android:gravity="center"
+            android:text="product_name"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@id/idIVSSImage"
+            android:drawablePadding="2dp"
+            android:text="product_price"
+            android:gravity="center"
+            android:textSize="20sp"
+            app:drawableStartCompat="@drawable/money_dollars_svgrepo_com" />
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/idTVPrice"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="2dp"
+            android:tooltipText="add"
+            android:src="@drawable/add_circle_svgrepo_com" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
